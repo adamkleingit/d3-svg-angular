@@ -1,5 +1,5 @@
 body {
-  border-top: 5px solid #dd0000;
+  background: black;
 }
 
 a {
@@ -16,9 +16,10 @@ main, footer {
 
 main {
   width: 450px;
-  background-color: #eee;
-  padding: 20px 60px 30px 60px;
+  background-color: #eef4f4;
   border-radius: 4px;
+  height: 450px;
+  margin-top: 150px;
 
   ul>li {
     margin: 4px 0;
