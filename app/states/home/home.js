@@ -3,7 +3,7 @@ import d3 from 'd3';
 export class HomeController {
 
   // @ngInject
-  constructor() {
+  constructor($scope) {
     this.scale = 1;
     this.pan = {
       x: 0,
@@ -74,50 +74,49 @@ export class HomeController {
     this.links = [
       {
         id: 1,
-        friend1: this.friends[0],
-        friend2: this.friends[1]
+        source: this.friends[0],
+        target: this.friends[1]
       },
       {
         id: 2,
-        friend1: this.friends[0],
-        friend2: this.friends[2]
+        source: this.friends[0],
+        target: this.friends[2]
       },
       {
         id: 3,
-        friend1: this.friends[1],
-        friend2: this.friends[3]
+        source: this.friends[1],
+        target: this.friends[3]
       },
       {
         id: 4,
-        friend1: this.friends[1],
-        friend2: this.friends[9]
+        source: this.friends[1],
+        target: this.friends[9]
       },
       {
         id: 5,
-        friend1: this.friends[4],
-        friend2: this.friends[5]
+        source: this.friends[4],
+        target: this.friends[5]
       },
       {
         id: 6,
-        friend1: this.friends[4],
-        friend2: this.friends[6]
+        source: this.friends[4],
+        target: this.friends[6]
       },
       {
         id: 7,
-        friend1: this.friends[4],
-        friend2: this.friends[7]
+        source: this.friends[4],
+        target: this.friends[7]
       },
       {
         id: 8,
-        friend1: this.friends[6],
-        friend2: this.friends[8]
+        source: this.friends[6],
+        target: this.friends[8]
       },
       {
         id: 9,
-        friend1: this.friends[7],
-        friend2: this.friends[9]
+        source: this.friends[7],
+        target: this.friends[9]
       }
     ];
   }
-
 }

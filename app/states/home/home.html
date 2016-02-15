@@ -1,19 +1,19 @@
 <svg zoom-pan pan="Home.pan" scale="Home.scale"
+     force-layout nodes="Home.friends" links="Home.links"
      width="100%" height="100%">
   <g ng-attr-transform="translate( {{ Home.pan.x }},{{ Home.pan.y }} )scale( {{ Home.scale }} )">
     <g 
       ng-repeat="link in Home.links track by link.id">
       <line
         class="friend-link"
-        ng-attr-x1="{{ link.friend1.x }}"
-        ng-attr-y1="{{ link.friend1.y }}"
-        ng-attr-x2="{{ link.friend2.x }}"
-        ng-attr-y2="{{ link.friend2.y }}">
+        ng-attr-x1="{{ link.source.x }}"
+        ng-attr-y1="{{ link.source.y }}"
+        ng-attr-x2="{{ link.target.x }}"
+        ng-attr-y2="{{ link.target.y }}">
       </line>
     </g>
     <g 
       ng-repeat="friend in Home.friends track by friend.id"
-      draggable="friend"
       ng-attr-transform="translate({{ friend.x }},{{ friend.y }})">
       <smiley>
       </smiley>

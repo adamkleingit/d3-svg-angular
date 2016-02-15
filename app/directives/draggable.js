@@ -22,7 +22,6 @@ function linkFn($scope, $element, attrs) {
 export function draggable() {
   return {
     restrict: 'A',
-    bindToController: true,
     link: linkFn
   };
 }
