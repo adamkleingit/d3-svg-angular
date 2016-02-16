@@ -19,8 +19,7 @@ export function arc() {
       radius: '@',
       thickness: '@',
       startAngle: '@',
-      endAngle: '@',
-      color: '@'
+      endAngle: '@'
     },
     templateUrl: '/components/arc/arc.html',
     controller: arcController,
