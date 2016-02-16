@@ -4,9 +4,9 @@ function linkFn($scope, $element, $attrs) {
   $scope.force = d3.layout.force()
     .nodes(nodes)
     .links(links)
-    .charge(-30)
-    .gravity(0.05)
-    .linkStrength(0.2)
+    .charge(-60)
+    .gravity(0.02)
+    .linkStrength(0.1)
     .linkDistance(260)
     .size([450,450])      
     .start();
