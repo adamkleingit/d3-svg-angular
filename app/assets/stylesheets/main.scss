@@ -20,6 +20,7 @@ main, footer {
 }
 
 main {
+  position: relative;
   width: 450px;
   background-color: #eef4f4;
   border-radius: 4px;
@@ -90,4 +91,11 @@ footer {
 
 .y.axis text {
   text-anchor:end;
+}
+
+input[type=range] {
+  position: absolute;
+  top: 5px;
+  left: 5%;
+  width: 90%;
 }

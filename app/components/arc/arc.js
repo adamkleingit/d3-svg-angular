@@ -1,7 +1,7 @@
 class arcController {
   // @ngInject
-  constructor($log, $element) {
-    this.d = d3.svg.arc()
+  d() {
+    return d3.svg.arc()
       .outerRadius(parseFloat(this.radius))
       .innerRadius(parseFloat(this.radius) - parseFloat(this.thickness))
       .startAngle(parseFloat(this.startAngle) * Math.PI)

@@ -3,10 +3,6 @@ function linkFn($scope, $element) {
     .scale($scope.scale)
     .orient($scope.orient);
 
-  if ($scope.ticks) {
-    axis = axis.ticks(parseInt($scope.ticks), $scope.ticksFormat);
-  }
-
   d3.select($element[0])
       .call(axis);
 }
@@ -18,9 +14,7 @@ export function axis() {
     replace: true,
     scope: {
       scale: '=',
-      orient: '@',
-      ticks: '@',
-      ticksFormat: '@'
+      orient: '@'
     },
     templateUrl: '/components/axis/axis.html',
     link: linkFn

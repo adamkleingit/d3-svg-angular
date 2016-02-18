@@ -3,16 +3,14 @@
   <g ng-attr-transform="translate({{ barChart.margin.left}}, {{ barChart.margin.top }})">
     <g class="x axis" ng-attr-transform="translate(0,{{ barChart.innerHeight }})">
       <axis
-        scale="barChart.x"
+        scale="barChart.xScale"
         orient="bottom"
       ></axis>
     </g>
     <g class="y axis">
       <axis
-        scale="barChart.y"
+        scale="barChart.yScale"
         orient="left"
-        ticks="10"
-        ticksFormat="%"
       ></axis>
 
       <text
@@ -23,9 +21,9 @@
 
     <rect ng-repeat="item in barChart.data"
       class="bar"
-      ng-attr-x="{{ barChart.x(item.x) }}"
-      ng-attr-width="{{ barChart.x.rangeBand() }}"
-      ng-attr-y="{{ barChart.y(item.value) }}"
-      ng-attr-height="{{ barChart.innerHeight - barChart.y(item.value) }}"></rect>
+      ng-attr-x="{{ barChart.xScale(item.month) }}"
+      ng-attr-width="{{ barChart.xScale.rangeBand() }}"
+      ng-attr-y="{{ barChart.yScale(item.value) }}"
+      ng-attr-height="{{ barChart.innerHeight - barChart.yScale(item.value) }}"></rect>
   </g>
 </svg>

@@ -5,9 +5,9 @@ function linkFn($scope, $element, $attrs) {
     .nodes(nodes)
     .links(links)
     .charge(-60)
-    .gravity(0.02)
+    .gravity(0.05)
     .linkStrength(0.1)
-    .linkDistance(260)
+    .linkDistance(160)
     .size([450,450])      
     .start();
 
