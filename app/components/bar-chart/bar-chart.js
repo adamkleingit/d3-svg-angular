@@ -1,3 +1,4 @@
+// barChart.js
 import { barChartData } from 'data';
 
 class barChartController {
@@ -13,7 +14,7 @@ class barChartController {
 
     // define x-scale
     this.xScale = d3.scale.ordinal()
-        .rangeRoundBands([0, this.innerWidth], .1)
+        .rangeRoundBands([0, this.innerWidth], .2)
         .domain(this.data.map((d) => d.month ));
 
     // define y-scale

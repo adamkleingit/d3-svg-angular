@@ -1,3 +1,4 @@
+// behaviours.js
 import {friends, links} from 'data';
 class behavioursController {
   // @ngInject

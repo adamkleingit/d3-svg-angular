@@ -1,3 +1,4 @@
+// draggable.js
 function linkFn($scope, $element, attrs) {
   const item = $scope.$eval(attrs.draggable);
   const throttleDigest = _.throttle($scope.$apply.bind($scope), 17);

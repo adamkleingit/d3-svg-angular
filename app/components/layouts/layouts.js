@@ -1,3 +1,4 @@
+// layouts.js
 import {friends, links} from 'data';
 class layoutsController {
   // @ngInject

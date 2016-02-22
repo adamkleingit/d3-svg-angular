@@ -1,3 +1,4 @@
+// axis.js
 function linkFn($scope, $element) {
   let axis = d3.svg.axis()
     .scale($scope.scale)
